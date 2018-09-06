@@ -1,0 +1,14 @@
+<% title("#{@page_title} | ") %>
+<%= render partial: 'datatables' %>
+<div class="row statsRow">
+    <%= render partial: "menu" %>
+    <div class="col-md-8">
+        <% if @page_title=='spelling-suggestion' %> 
+            <%= render partial: 'graph_spelling_suggestions' %>
+        <% end %>
+        <% if @page_title=='best-bets-regular' %> 
+            <%= render partial: 'graph_best_bets' %>
+        <% end %>
+    </div>
+    <%= render partial: "date_range" %>
+</div>

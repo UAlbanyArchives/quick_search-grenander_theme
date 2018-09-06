@@ -1,0 +1,13 @@
+<% title("#{@page_title} | ") %>
+<%= render partial: 'datatables' %>
+<div class="row statsRow">
+	<div class="col-md-2">
+    <%= render partial: 'menu' %>
+    </div>
+    <div class="col-md-8">
+        <h2>General Statistics</h2>
+        <%= render partial: 'graph_general_statistics'  %>
+    </div>
+    <%= render partial: "date_range" %>
+</div>
+
