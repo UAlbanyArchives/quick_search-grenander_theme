@@ -1,0 +1,46 @@
+<% unless result["mobile_link"] %>
+    <h4 class='card-title'>
+        <%= render partial: "/quick_search/search/result_title", locals: { link: result['link'], title: result['title'], date: result['date'] } %>
+        <% if result['availability'] %>
+            <% if result["availability"] == "online content" %>
+                <small class='badge badge-success'><%= result['availability'] %></small>
+            <% end %>
+        <% end %>
+    </h4>
+<% else %>
+    <h4 class='title show-for-medium-up'>
+        <%= render partial: "/quick_search/search/result_title", locals: { link: result['link'], title: result['title'], date: result['date'] } %>
+    </h4>
+    <h4 class='title show-for-small-only'>
+        <%= render partial: "/quick_search/search/result_title", locals: { link: result['mobile_link'], title: result['title'], date: result['date'] } %>
+    </h4>
+<% end %>
+<p class='link'><%= result["link"] %></p>
+<% if result.description %>
+<p class='description card-text'><%= result["description"].html_safe %></p>
+<% end %>
+<% if result["author"]%>
+    <% author = result["author"].html_safe %>
+<% end %>
+<p class='author card-text'><%=  truncate(author, length: 80, separator: '; ') %></p>
+<% if result.citation %>
+<p class="citation card-text">
+<%= render partial: '/quick_search/search/citation', locals: {:result => result} %>
+</p>
+<% end %>
+<p class='format card-text'><%= result["format"] %>
+
+<% if result['fulltext'] %>
+<%= link_to result["link"], {:class => ''} do %>
+    Full&nbsp;Text&nbsp;Online&nbsp;<i class='fa fa-cloud-download'></i>
+<% end %>
+<% end %>
+</p>
+<p>
+<% if result['location'] %>
+    <span class='location card-text'><%= result['location'] %></span>
+<% end %>
+<% if result['collection'] %>
+    <p class='collection card-text'><i class="fas fa-angle-double-right"></i> Part of <a href="<%= result['collection'][1] %>"><%= result['collection'][0] %></a></p>
+<% end %>
+</p>

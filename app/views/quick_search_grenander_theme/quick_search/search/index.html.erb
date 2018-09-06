@@ -1,0 +1,38 @@
+<% title %>
+<%# render partial: 'layouts/quick_search/page_title', locals: { page_title: @page_title } %>
+<%# render partial: 'layouts/quick_search/search_form' %>
+
+<div id="quicksearch-ga-debug">
+    <ol></ol>
+</div>
+<div class="quicksearch-ga-click-tracking">
+    <div id="result-types" class="row">
+        <div class="col-12 result-types">
+            <%= render partial: 'layouts/quick_search/found_types' %>
+        </div>
+    </div>
+</div>
+<%# FIXME: This logic could stand a second look %>
+<div id="spelling-suggestion" class="hidden"></div>
+
+<div class="quicksearch-ga-click-tracking">
+    <div class="row articles-catalog">
+        <div class="col-md-6 summon module">
+            <%= render_module(@arclight, 'arclight') %>
+        </div>
+        <div class="col-md-6 catalog module">
+            <%= render_module(@hyrax, 'hyrax') %>
+        </div>
+        <hr>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+
+            <div class="col-sm-12 col-md-6" id="more-options" class="more-options">
+                <%= render partial: 'layouts/quick_search/more_options' %>
+            </div>
+
+        </div>
+    </div>
+</div>
