@@ -6,7 +6,7 @@ require "quick_search_grenander_theme/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "quick_search-grenander_theme"
-  s.version     = QuickSearchGenericTheme::VERSION
+  s.version     = QuickSearchGrenanderTheme::VERSION
   s.authors     = ["Greg Wiedeman"]
   s.email       = ["gwiedeman@albany.edu"]
   s.homepage    = "https://library.albany.edu/archive"
