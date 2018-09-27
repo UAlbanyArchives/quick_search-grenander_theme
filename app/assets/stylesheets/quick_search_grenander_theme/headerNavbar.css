@@ -39,7 +39,7 @@ body {
 		display: block;
 	}
 	.content-spacer {
-		margin-top: 110px;
+		margin-top: 170px;
 	}
 	.navbar-inverse .navbar-nav li {
 		margin-top: 2px;
@@ -68,14 +68,14 @@ span.glyphicon-triangle-top {
     font-size: 0.6em;
 }
 
-.navbar {
+#manifest-nav {
 	min-height: 107px;
 	border-radius: 0px;
 	z-index: 1000;
 	padding: 0px;
 }
 
-.navbar li.divider {
+#manifest-nav li.divider {
 	background-color: #46166B !important;
 	height: 1px;
 }
@@ -486,7 +486,7 @@ span.glyphicon-triangle-top {
 	background-position: 0px 3px;
 	min-height: 50px;
   }
-  .navbar {
+  #manifest-nav {
 	min-height: 50px;
   }
   .navbar-brand2 {
@@ -758,17 +758,17 @@ nav #search.btn-primary.active {
 
 @media only screen and (max-width: 767px) {
 	#main-container {
-		padding-top: 121px !important;
+		padding-top: 161px !important;
 	}
 }
 
 @media only screen and (max-width: 400px) {
 	#main-container {
-		padding-top: 57px !important;
+		padding-top: 107px !important;
 	}
 }
 
-#search_field {
+/*#search_field {
 	display: none;
 }
 
@@ -782,4 +782,4 @@ nav #search.btn-primary.active {
 
 .twitter-typeahead {
 	flex-grow: 0 !important;
-}
+}*/
