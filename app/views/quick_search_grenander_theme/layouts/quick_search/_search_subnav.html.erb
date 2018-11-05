@@ -22,6 +22,7 @@
 		<% end %>
 
 		<%= form_for("search", method: :get, :url => "http://169.226.92.29/", html: {class: 'search-query-form arclightSearch'}) do |f| %>
+		  <%= hidden_field_tag :search_field, 'all_fields' %>
 	      <div class="input-group">
 			<div class="input-group-prepend">
 			    <button class="btn btn-secondary dropdown-toggle searchSelect" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
