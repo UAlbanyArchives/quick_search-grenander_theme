@@ -2,5 +2,69 @@
 <%# render partial: '/layouts/quick_search/page_title', locals: { page_title: @page_title } %>
 <%# render partial: 'layouts/quick_search/search_form' %>
 <div class="quicksearch-ga-click-tracking">
-	<%# render partial: 'layouts/quick_search/common_searches' %>
+	<div id="result-types" class="row">
+		<div class="col-12 result-types">
+			<ul class="nav">
+            <li class="nav-item arclight">
+	            <a class="nav-link disabled no-results-label">
+	            	Collections
+	            </a>
+            </li>
+            <li class="nav-item hyrax">
+	            <a class="nav-link disabled no-results-label">
+	            	Digital Selections
+	            </a>
+            </li>
+		</ul>
+		</div>
+	</div>
+</div>
+
+<div class="quicksearch-ga-click-tracking">
+	<div class="row articles-catalog">
+		<div class="col-md-6 summon module">
+            <div id="arclight" class="card" >
+				<h5 class="card-header">Collections</h5>
+				<div class="card-body">
+					<p>
+						<b><i>Collections</i></b> include records of all items in the M.E. Grenander Department of Special Collections & Archives.
+						<ul>
+							<li>Some of these items are available online and marked with <span class="badge badge-success">online content</span>.</li>
+							<li>If collections are not available online, you may request a few items to be digitized, or visit our reading room to view them in person.</li>
+						</ul>
+					</p>
+					<!--<p class="search-error-rescue see-all-results">
+						<a data-quicksearch-ga-action="error" href="https://archives.albany.edu/collections/catalog?search_field=all_fields&amp;q=">
+							<i class="fa fa-angle-right"></i> Try searching Collections for <span class='query'>""</span>
+						</a>
+					</p>-->
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 catalog module">
+			<div id="hyrax" class="card" >
+				<h5 class="card-header">Digital Selections</h5>
+				<div class="card-body">
+					<p>
+						<b><i>Digital Selections</i></b> are items that are available online because they have been digitized or were "born-digital," or created digitally.
+						<ul>
+
+							<li>Digital Selections are also represented in Collections alongside simmilar materials that may not be available online.</li>
+							<li>Collections may be digitized and make available online as single items from user requests, or among large portions of items that archivists have considered to be particularly useful and are often used.</li>
+						</ul>
+					</p>
+					<!--<p class="search-error-rescue see-all-results">
+						<a data-quicksearch-ga-action="error" href="https://archives.albany.edu/collections/catalog?search_field=all_fields&amp;q=">
+							<i class="fa fa-angle-right"></i> Try searching Collections for <span class='query'>""</span>
+						</a>
+					</p>-->
+				</div>
+			</div>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<div class="quicksearch-ga-click-tracking">
+	<%# render partial: 'layouts/quick_search/more_oprtions' %>
 </div>
