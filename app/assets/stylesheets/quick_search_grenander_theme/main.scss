@@ -1,5 +1,19 @@
+
+a {
+	color: #642a90;
+}
+
+a:hover {
+	color: #006c68;
+}
+
+.btn-info {
+	background-color: #006c68;
+}
+
 body {
-  /*background-color: #008cba;*/
+	background: #e2e1e0;
+	font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 }
 
 #content {
@@ -10,6 +24,14 @@ body {
   background-color: white;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+#main-container {
+	margin-top: 15px;
+}
+
+.card, #more-options {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 ol { padding-left: 1.8em; }
@@ -23,9 +45,17 @@ ol { padding-left: 1.8em; }
 	display: none;
 }
 
-.result .collection { 
-	font-size: 0.8em;
-	margin-left: 1em;
+.col-sm-12 .result .date {
+	float: right;
+	margin-top: 3px;
+	margin-right: 15px;
+	font-style: italic;
+}
+  
+.result h4.card-title {
+	font-size: 1.15em;
+	font-weight: 700;
+	margin-bottom: .5rem;
 }
 
 .result .card-title .badge {
@@ -36,6 +66,74 @@ ol { padding-left: 1.8em; }
 	margin-bottom: 1em;
 }
 
+p.card-text {
+	font-size: .9em;
+}
+
+.card-text .fas {
+	color: #525252;
+}
+
+#more-options {
+	background: #ffffff;
+	padding: 15px 0px;
+	border-radius: calc(0.25rem - 1px);
+}
+
+#more-options h4 {
+	font-size: 1.25rem;
+	padding-left: 1.25rem;
+	padding-bottom: 15px;
+}
+
+#more-options ul {
+	list-style: none;
+}
+
+
+#more-options li {
+	margin-bottom: 10px;
+}
+
+#more-options  li:before {
+	content: "\f35d";
+	font-weight: 900;
+	font-family: 'Font Awesome 5 Free';
+	width: 15px;
+	height: 15px;
+	padding-right: 10px;
+	color: #642a90;
+}
+
+.result-types {
+	display: none;
+}
+
+.see-all-results {
+	background: #006c68;
+	border: 1px solid #006c68;
+	padding: 10px 15px;
+	border-radius: 3px;
+	display: block;
+	color: #ffffff;
+	font-weight: 300;
+	text-align: center;
+}
+
+.see-all-results:hover {
+	color: #ffffff;
+	background: #642a90;
+	text-decoration: none;
+}
+
+.see-all-results.search-error-rescue {
+	background: #f2dede;
+	border: 1px solid #ebccd1;
+}
+
+.see-all-results.search-error-rescue a{
+	color: #a94442;
+}
 
 @media only screen and (min-width: 575px) {
 	.result .img-thumbnail {

@@ -544,6 +544,21 @@ span.glyphicon-triangle-top {
     margin-bottom: 30px;
 }
 
+
+.footRight {
+	text-align: left;
+}
+
+.footRight img {
+	max-width: 300px;
+	margin-bottom: 15px;
+}
+
+footer {
+	margin-top: 25px;
+	background-color: #46166B;
+}
+
 .spc-footer {
     margin: 50px 0;
 	padding: 20px;
