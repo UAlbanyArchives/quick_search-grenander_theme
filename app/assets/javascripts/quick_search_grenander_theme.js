@@ -14,4 +14,4 @@
 //= require popper
 //= require bootstrap-sprockets
 // require headerAffix
-//= require searchOptions
+//= require searchHandler
