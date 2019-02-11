@@ -433,7 +433,7 @@ span.glyphicon-triangle-top {
 	margin-top: 0px;
 	}
 	.navbar-top {
-		position: fixed;
+		/*position: fixed;*/
 		width: 100%;
 		top: 0;
 	}
@@ -755,6 +755,9 @@ nav #search.btn-primary.active {
 	#search.btn-primary {
 		padding: 6px !important;
 	}
+	.footRight img {
+		margin-top: 15px;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -771,11 +774,11 @@ nav #search.btn-primary.active {
 	}
 }
 
-@media only screen and (max-width: 767px) {
+/*@media only screen and (max-width: 767px) {
 	#main-container {
 		padding-top: 161px !important;
 	}
-}
+}*/
 
 @media only screen and (max-width: 400px) {
 	#main-container {
