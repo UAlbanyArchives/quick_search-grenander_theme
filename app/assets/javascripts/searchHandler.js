@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
     // URLs for Search form get request
     var allSearchURL = "https://archives.albany.edu/search";
     var arclightSearchURL = "https://archives.albany.edu/collections/catalog";
-    var hyraxSearchURL = "https://archives.albany.edu/catalog/";
+    var hyraxSearchURL = "https://archives.albany.edu/catalog";
 
     //query selector for search form
     var searchForm = document.getElementsByClassName('allSearch');
