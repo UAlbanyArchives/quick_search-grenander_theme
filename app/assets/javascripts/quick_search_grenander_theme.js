@@ -15,3 +15,7 @@
 //= require bootstrap-sprockets
 // require headerAffix
 //= require searchHandler
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});

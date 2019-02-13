@@ -20,6 +20,16 @@
                     <%= link_to raw(module_display_name), searcher.loaded_link, { :class => ''}  %>
                     <%= link_to raw(module_display_name), searcher.loaded_link_mobile, { :class => ''}  %>
                 <% end %>
+                <% if searcher.loaded_link.start_with? "https://archives.albany.edu/collections?" %>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Collections include records of all items in the M.E. Grenander Department of Special Collections & Archives.">
+                        <i class="fa fa-info-circle fa-2" aria-hidden="true"></i>
+                    </a>
+                <% end %>
+                <% if searcher.loaded_link.start_with? "https://archives.albany.edu/catalog?" %>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title='Digital Selections are items that are available online because they have been digitized or were "born-digital," or created digitally.'>
+                        <i class="fa fa-info-circle fa-2" aria-hidden="true"></i>
+                    </a>
+                <% end %>
             </div>
             <small class="float-right">
                 <i class="fas fa-angle-double-right"></i>
