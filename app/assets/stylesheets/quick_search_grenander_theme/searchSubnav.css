@@ -165,3 +165,51 @@ h2.search-intro {
 		top: 50px;
 	}
 }
+
+@media only screen and (max-width: 400px) {
+
+    .searchSubnav {
+        top: auto;
+    }
+
+    #main-container {
+        padding-top: 0px;
+    }
+
+    .module .card-header small {
+        float: left!important;
+        margin-top: 5px;
+    }
+
+    li.with-thumbnail {
+        margin-bottom: 25px;
+    }
+
+    .spc-footer {
+        margin: 0px 0px 25px 0px;
+        font-size: 9pt;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footRight {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #efb310;
+    }
+    .footRight p {
+        padding-right: 33%;
+    }
+
+    .spc-footer a {
+        margin: 15px 0 0 0;
+        display: block;
+    }
+
+    .spc-footer .footerLogo a {
+        margin: auto;
+        display: inline-block;
+    }
+
+}

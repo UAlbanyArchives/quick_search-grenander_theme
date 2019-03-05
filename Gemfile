@@ -13,7 +13,7 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 
-gem 'bootstrap', '~> 4.1.3'
+gem "bootstrap", '>= 4.3.1'
 gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'font-awesome-sass'
