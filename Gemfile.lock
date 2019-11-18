@@ -63,7 +63,7 @@ GEM
       sassc-rails (>= 2.0.0)
     builder (3.2.3)
     concurrent-ruby (1.1.4)
-    crass (1.0.4)
+    crass (1.0.5)
     d3-rails (5.7.0)
       railties (>= 3.1)
     erubi (1.8.0)
@@ -97,7 +97,7 @@ GEM
     kaminari-core (1.1.1)
     lodash-rails (4.17.10)
       railties (>= 3.1)
-    loofah (2.2.3)
+    loofah (2.3.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -112,7 +112,7 @@ GEM
     modernizr-rails (2.7.1)
     mysql2 (0.5.2)
     nio4r (2.3.1)
-    nokogiri (1.10.1)
+    nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     popper_js (1.14.5)
     quick_search-core (0.2.0)
@@ -195,8 +195,7 @@ DEPENDENCIES
   font-awesome-sass
   jquery-rails
   lodash-rails
-  loofah (>= 2.2.3)
-  nokogiri (>= 1.8.5)
+  loofah (>= 2.3.1)
   quick_search-grenander_theme!
   rack (>= 2.0.6)
   sass (>= 3.5.2)
