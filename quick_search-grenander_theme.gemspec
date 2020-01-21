@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = QuickSearchGrenanderTheme::VERSION
   s.authors     = ["Greg Wiedeman"]
   s.email       = ["gwiedeman@albany.edu"]
-  s.homepage    = "https://library.albany.edu/archive"
+  s.homepage    = "https://archives.albany.edu"
   s.summary     = "UAlbany's Bootstrap 4 theme for NC State's QuickSearch"
   s.description = "UAlbany's Bootstrap 4 theme for NC State's QuickSearch."
   s.license = "MIT"

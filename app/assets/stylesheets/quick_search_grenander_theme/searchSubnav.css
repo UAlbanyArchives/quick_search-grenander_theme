@@ -10,7 +10,7 @@
 	transition: all ease .25s;
 	border-radius: calc(0.5rem - 1px);
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	background-image: url('https://library.albany.edu/libdru/future/search-lighten10.png');
+	background-image: url('https://archives.albany.edu/static/web/images/search-lighten10.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: top left;
