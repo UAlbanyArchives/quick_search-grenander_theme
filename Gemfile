@@ -19,9 +19,3 @@ gem 'jquery-rails'
 gem 'font-awesome-sass'
 gem 'd3-rails'
 gem 'lodash-rails'
-
-gem 'ffi', ">= 1.9.24"
-gem 'sprockets', ">= 3.7.2"
-gem "loofah", ">= 2.3.1"
-gem "rack", ">= 2.0.6"
-gem "sass", ">= 3.5.2"
