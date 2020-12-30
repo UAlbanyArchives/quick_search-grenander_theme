@@ -5,3 +5,32 @@
 @import "quick_search_grenander_theme/browseNav";
 @import "quick_search_grenander_theme/headerNavbar";
 @import "quick_search_grenander_theme/searchSubnav";
+
+.result .result-details {
+    margin-bottom: 20px;
+}
+
+.result .collection {
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+#arclight .result .series {
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+#arclight .result .subseries {
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+#arclight .result .subsubseries {
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+
+#arclight .result .subsubsubseries {
+    margin-bottom: 0px;
+    margin-left: 40px;
+}

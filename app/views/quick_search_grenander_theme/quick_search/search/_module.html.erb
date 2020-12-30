@@ -30,6 +30,11 @@
                         <i class="fa fa-info-circle fa-2" aria-hidden="true"></i>
                     </a>
                 <% end %>
+                <% if searcher.loaded_link.start_with? "https://archives.albany.edu/history?" %>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title='UAlbany history events.'>
+                        <i class="fa fa-info-circle fa-2" aria-hidden="true"></i>
+                    </a>
+                <% end %>
             </div>
             <small class="float-right">
                 <i class="fas fa-angle-double-right"></i>
